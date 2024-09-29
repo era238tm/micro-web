@@ -5,7 +5,9 @@ body {
 
 main {
   width: fit-content;
-  margin: 24px auto;
+  padding: 24px;
+  border-radius: 4px;
+  border: 2px solid #68676c;
   display: flex;
   flex-direction: column;
   gap: 16px;

@@ -43,6 +43,7 @@ finalTime.addEventListener('change', validateInput)
 
 findDuration.addEventListener('click', () => {
   if (!(initialTime.validity.valid && finalTime.validity.valid)) {
+    output.nextElementSibling.innerText = 'Entered value is invalid.'
     return
   }
 

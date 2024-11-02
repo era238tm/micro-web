@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time Calculator</title>
+
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="scripts.js"></script>
+</head>
+
+<body>
+  <main>
+    <div class="input-block">
+      <label for="initial-time">Initial Time: </label>
+      <input type="datetime-local" id="initial-time">
+      <div class="input-error"></div>
+    </div>
+
+    <div class="input-block">
+      <label for="final-time">Final Time: </label>
+      <input type="datetime-local" id="final-time">
+      <div class="input-error"></div>
+    </div>
+
+    <div class="input-block">
+      <input type="button" id="find-duration" value="Compute">
+    </div>
+
+    <div class="output-block">
+      <label for="output">Duration: </label>
+      <output id="output">dd-mm-yyyy --:--</output>
+      <div class="output-error"></div>
+    </div>
+  </main>
+</body>
+
+</html>

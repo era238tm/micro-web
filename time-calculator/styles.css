@@ -1,0 +1,47 @@
+body {
+  font-family: monospace;
+  padding: 24px;
+}
+
+main {
+  width: fit-content;
+  padding: 24px;
+  border-radius: 4px;
+  border: 2px solid #68676c;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.input-block label,
+.output-block label {
+  margin: 4px 6px;
+  position: absolute;
+}
+
+.input-block input,
+.output-block output {
+  font-family: inherit;
+  font-size: 1.5em;
+  padding: 4px;
+  padding-top: 23px;
+}
+
+.input-block input[type=button] {
+  min-width: calc(21ch + 8px);
+  width: 100%;
+  padding-block: 7px 8px;
+  cursor: pointer;
+}
+
+.input-error,
+.output-error {
+  color: #ff0900;
+  padding-top: 4px;
+}
+
+.output-block output {
+  border: 1px solid black;
+  border-radius: 3px;
+  display: block;
+}
